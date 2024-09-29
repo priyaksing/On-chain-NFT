@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# NFT with On-Chain Metadata
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a dynamic NFT with on-chain metadata on Polygon Amoy Tstnet. This includes 5 different functions:
 
-Try running some of the following tasks:
+**generateCharacter(tokenId)**: to generate and update the SVG image of NFT
+**getLevels(tokenId)**: to get the current level of an NFT 
+getTokenURI(tokenId): to get the image of the NFT i.e. TokenURI 
+mint(): to mint the NFT 
+train(tokenId): to train an NFT and raise its level, dynamically changing the metadata from the contract itself
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
